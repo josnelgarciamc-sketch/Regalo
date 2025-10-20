@@ -1,0 +1,130 @@
+
+<!DOCTYPE html> <!-- Usare comentarios para anotar lo aprendido y que sea más fácil para personas ajenas entender el código -->
+<html lang="es"> <!-- Definimos el idioma de la página (opcional pero sirve para los metadatos) -->
+
+
+<head> <!-- Aquí se definen los metadatos e información que ira en la pestaña superior en los buscadores -->  
+  <meta charset="UTF-8" /> <!-- Definimos la codificación de caracteres de la página (recomendable UTF-8 para evitar errores con acentos y caracteres) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Definimos la escala de la página para dispositivos móviles -->
+  
+  <title>SORPRESAAA!!!!</title> <!-- Definimos el título de la página, la etiqueta title y el elemento es lo que saldra en la pestaña superior del buscador -->
+  
+  <!-- Favicon -->
+  <link rel="icon" href="image/torta.ico" type="image/x-icon" />
+  
+  <!-- Meta_datos que se verán reflejados al compartir el enlace  -->
+	<meta property="og:title" content="Detallito para mi niña _" />
+	<meta property="og:description" content="Gome por no estar y no poder regalarte más" />
+
+
+  <link rel="stylesheet" href="estilos.css" /> <!-- Enlazamos el archivo de estilos (css) de la página -->
+  <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script> <!-- recomendación de Chatgpt-->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.js"></script> <!-- fuegos artificiales -->
+
+
+</head>
+
+<body>
+  <!-- Mensaje que aparece al inicio -->
+  <div id="mensaje-inicial" class="initial-text" >¡Enciende la vela!</div>
+
+  <div id="birthdayMessage" class="hidden">
+    <h1>🎉 ¡FELIZ CUMPLEAÑOS AMUR! 🎉</h1>
+    <p>Regalame una sonrisita mi niña<3</p>
+  </div>
+
+    <!-- Elementos adicionales para el efecto de cumpleaños -->
+    <div id="efecto-cumple" style="display: none;">
+      <img src="image/torta.png" alt="Imagen de torta de cumpleaños" id="pastel-cumple">
+    </div>
+
+    
+  <!-- Botón para activar PARTYHARD -->
+  <div id="fiesta-boton" style="display: none;">
+    <button id="fiestaBtn" class="golden-button">PULSA AQUI NIÑA</button>
+  </div>
+
+  <!-- Botón para activar/desactivar música -->
+<!-- Contenedor del botón de música -->
+<div id="musica-container" style="display: none;"> <!-- Oculto inicialmente -->
+  <button id="musica-boton" alt="Chill out" style="display: none;">
+    <i>C</i>
+    <i>h</i>
+    <i>i</i>
+    <i>l</i>
+    <i>l</i>
+    <i>&nbsp;</i>
+    <i>o</i>
+    <i>u</i>
+    <i>t</i>
+  </button>
+</div>
+
+<!-- Botón para el mensaje serio -->
+  <div id="nostalgic-boton" style="display: none;">
+    <a href="pagina_mensaje/mensaje.html" class="btn">Mensaje</a>
+  </div>
+
+
+
+  <!-- Contenedor principal de la checkbox -->
+    <label class="antorcha">
+      <input type="checkbox" id="checkbox-antorcha" />
+      <div class="checkmark"></div>
+    
+    <!-- Elementos de la antorcha Minecraft -->
+    <div class="torch">
+      <!-- Efecto de luz -->
+      <div class="light-effect"></div>
+      <div class="glow-effect"></div>
+
+      <!-- Partículas de la antorcha -->
+      <div class="particles">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Efectos de humo de la antorcha -->
+      <div class="smoke">
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Cabeza de la antorcha -->
+      <div class="head">
+        <!-- Caras superiores de la cabeza -->
+        <div class="face top">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="face left">
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <div class="face right">
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+
+      <!-- Palo de la antorcha -->
+      <div class="stick">
+        <!-- Lado izquierdo del palo -->
+        <div class="side side-left">
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+        </div>
+        <!-- Lado derecho del palo -->
+        <div class="side side-right">
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+          <div></div><div></div><div></div><div></div>
+        </div>
+      </div>
+    </div>
+  </label>
+
+  <!-- Enlace al archivo de JavaScript -->
+  <script src="efectos.js"></script>
+</body>
+</html>
